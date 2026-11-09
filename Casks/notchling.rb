@@ -7,7 +7,7 @@ cask "notchling" do
   desc "Shows which Claude Code session needs you, in the notch"
   homepage "https://github.com/Fanoflix/notchling-releases"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Notchling.app"
 
