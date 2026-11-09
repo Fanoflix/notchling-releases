@@ -19,8 +19,11 @@ This repo holds the downloads and the Homebrew cask. The source is private for n
 
 ```sh
 brew tap fanoflix/notchling https://github.com/Fanoflix/notchling-releases
+brew trust fanoflix/notchling
 brew install --cask notchling
 ```
+
+`brew trust` is needed on Homebrew 7 and later, which refuses casks from third-party taps until you trust them. On older versions, skip it.
 
 Homebrew also clears macOS's download warning for you, so Notchling opens straight away.
 
